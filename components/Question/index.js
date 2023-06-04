@@ -53,8 +53,8 @@ export default function Question({ questions, hideExercise, finishTest }) {
     };
 
     return (
-        <div>
-            <button className="flex items-center gap-1 bg-[#f71963] p-2 rounded-sm shadow-md text-white" onClick={hideExercise}>
+        <div className=" space-y-6">
+            <button className="flex items-center gap-2 bg-[#f71963] py-2 px-6 rounded-full shadow-md text-white hover:opacity-80 hover:scale-[104%] transition-all" onClick={hideExercise}>
                 <span>
                     <FaArrowLeft />
                 </span>

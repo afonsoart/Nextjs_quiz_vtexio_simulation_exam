@@ -5,7 +5,7 @@ export default function ExerciseList({ exercises, func }) {
             <ul>
                 {exercises.map((exercise) => (
                     <li className="my-3 " key={exercise.id}>
-                        <button className="w-full py-3 rounded-lg text-lg font-medium px-4 text-white leading-6 bg-[#f71963] hover:opacity-60 hover:scale-105 transition-all duration-500 " onClick={() => func(exercise.id)}>
+                        <button className="w-full py-3 rounded-full text-lg font-medium px-4 text-white leading-6 bg-[#f71963] hover:opacity-80 hover:scale-[102%] transition-all duration-500 " onClick={() => func(exercise.id)}>
                             {exercise.title}
                         </button>
                     </li>

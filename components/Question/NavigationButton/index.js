@@ -3,8 +3,8 @@ export default function NavigationButton({ state, moveQuestion }) {
 
     const buttonStyles = {
         disabled:
-            "bg-blue-500 text-white font-bold py-2 px-4 rounded-full opacity-50 cursor-not-allowed",
-        active: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full",
+            "bg-[#f71963] text-white font-bold py-2 px-4 rounded-full opacity-50 cursor-not-allowed",
+        active: "bg-[#f71963] hover:scale-[104%] text-white font-bold py-2 px-4 rounded-full transition-all",
     };
 
     const getButton = (direction) => {

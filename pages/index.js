@@ -105,7 +105,7 @@ export default function Home({ exercises }) {
                 <title>Quiz</title>
                 <meta name="description" content="Quiz app in next js" />
             </Head>
-            <div className=" w-11/12 lg:w-1/2 m-auto mt-[120px] bg-gray-200 p-6 rounded-md shadow-2xl">
+            <div className=" w-11/12 lg:w-1/2 m-auto mt-[120px] bg-gray-200 py-7 px-5 lg:py-8 lg:px-16 rounded-md shadow-2xl">
                 <main className="">
                     {!isExerciseShown ? (
                         <ExerciseList
@@ -115,12 +115,12 @@ export default function Home({ exercises }) {
                     ) : isExerciseDone ? (
                         <div>
                             <p className="my-4">
-                                You answered {score}/{questions.length}{" "}
-                                correctly!{" "}
+                                Você respondeu {score}/{questions.length}{" "}
+                                de perguntas corretas!{" "}
                             </p>
 
                             <button
-                                className="flex items-center gap-1 bg-gray-400 p-2 rounded-sm shadow-md text-white"
+                                className="flex items-center gap-1 bg-[#f71963] py-2 px-5 rounded-full shadow-md text-white"
                                 onClick={hideExercise}
                             >
                                 <span>

@@ -6,9 +6,8 @@ import ExerciseList from "../components/ExerciseList";
 
 export function getServerSideProps() {
     const exercises = [
-        { id: 0, title: "VTEX Learn" },
-        { id: 1, title: "Conceito de Workspaces" },
-        { id: 3, title: "Desenvolvimento de Apps VTEX IO" },
+        { id: 0, title: "Iniciar" },
+        
     ];
 
     return {
@@ -21,17 +20,8 @@ export function getServerSideProps() {
 export function getQuestions(exerciseId) {
     const questions = [
         {
-            id: 0,
-            exerciseId: 0,
-            question:
-                "what was the first fourth of july celebration to use fireworks?",
-            answers: [1777, 1799, 1876, 1800, 1822],
-            correctAnswer: "a",
-        },
-        
-        {
             id: 1,
-            exerciseId: 1,
+            exerciseId: 0,
             question:
                 "Qual das opções a seguir descreve corretamente a relação entre os workspaces na plataforma VTEX IO e os usuários da loja?",
             answers: [
@@ -45,14 +35,6 @@ export function getQuestions(exerciseId) {
             id: 2,
             exerciseId: 0,
             question:
-                "what year did the star-spangled banner become the national anthem?",
-            answers: [1900, 1865, 1976, 1931, 1942],
-            correctAnswer: "d",
-        },
-        {
-            id: 3,
-            exerciseId: 1,
-            question:
                 "Qual das opções a seguir descreve corretamente os tipos de workspace na plataforma VTEX IO?",
             answers: [
                 "Development, Master, Production",
@@ -62,7 +44,47 @@ export function getQuestions(exerciseId) {
             ],
             correctAnswer: "a",
         },
-       
+        {
+            id: 3,
+            exerciseId: 0,
+            question:
+                "O comando para criar um Workspace de Produção no VTEX é:",
+            answers: [
+                "VTEX use {workspaceName} --production",
+                "VTEX create {workspaceName} --production",
+                "VTEX deploy {workspaceName} --production",
+                "VTEX start {workspaceName} --production",
+            ],
+            correctAnswer: "a",
+        },
+        
+        {
+            id: 4,
+            exerciseId: 0,
+            question:
+                "Quais desta alternativas é a alternativa correta Sobre o uso de blocos básicos em VTEX IO, escolha a opção verdadeira:",
+            answers: [
+                "Para utilizar blocos em um tema é necessário que o aplicativo daquele bloco esteja declarado no arquivo manifest do tema.",
+                "Properties ou props são formas de definir que um bloco será child de outro bloco.",
+                "É possível utilizar o @ para instanciar um bloco. Por exemplo: info-card@home.",
+                "Dizer que um bloco é filho de outro quer dizer que ele irá herdar as características do pai. ",
+            ],
+            correctAnswer: "a",
+        },
+
+        {
+            id: 5,
+            exerciseId: 0,
+            question:
+                "Sobre apps em VTEX IO, quais desses tipos não é possível criar:",
+            answers: [
+                "Store apps: apps que podem ser comprados pelos usuários nas lojas.",
+                "Storefront apps: apps que renderizam componentes para o front de uma loja.",
+                "Pixel apps: que coletam dados e enviam para um serviço de terceiros.",
+                "Admin apps: apps que funcionam como um novo módulo no admin da loja.",
+            ],
+            correctAnswer: "a",
+        },
     ];
 
     return questions.filter((items) => items.exerciseId === exerciseId);

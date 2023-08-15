@@ -90,7 +90,7 @@ export function getQuestions(exerciseId) {
             id: 6,
             exerciseId: 0,
             question:
-                "What does the vtex url command do in the context of VTEX IO?",
+                "What does the 'vtex url' command do in the context of VTEX IO?",
             answers: [
                 "Generates a random URL for testing purposes.",
                 "Displays the base URL for the current account only.",
@@ -98,6 +98,19 @@ export function getQuestions(exerciseId) {
                 "Sets up a new URL for the VTEX development environment."
             ],
             correctAnswer: "c",
+        },
+        {
+            id: 7,
+            exerciseId: 0,
+            question:
+                "What does the command 'vtex test unit' do in the context of VTEX IO?",
+            answers: [
+                "Executes end-to-end tests for the app.",
+                "Deploys the app to a production environment.",
+                "Initiates a linter to check code quality.",
+                "Runs unit tests for the app in the current directory."
+            ],
+            correctAnswer: "d",
         },
     ];
 

@@ -112,6 +112,19 @@ export function getQuestions(exerciseId) {
             ],
             correctAnswer: "d",
         },
+        {
+            id: 8,
+            exerciseId: 0,
+            question:
+                "What does the command 'vtex plugins update' do in the context of VTEX IO?",
+            answers: [
+                "Deletes all plugins from your machine.",
+                "Installs new plugins on your machine.",
+                "Updates all plugins installed on your machine.",
+                "Restores previously uninstalled plugins on your machine."
+            ],
+            correctAnswer: "c",
+        },
     ];
 
     return questions.filter((items) => items.exerciseId === exerciseId);

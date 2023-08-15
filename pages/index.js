@@ -125,6 +125,20 @@ export function getQuestions(exerciseId) {
             ],
             correctAnswer: "c",
         },
+
+        {
+            id: 9,
+            exerciseId: 0,
+            question:
+                "In the context of VTEX IO, what does the following command do (vtex plugins link PLUGIN?)",
+            answers: [
+                "Installs a new VTEX IO plugin globally.",
+                "Uninstalls a VTEX IO plugin from the project.",
+                "Activates a VTEX IO plugin for production use.",
+                "Links a plugin to the CLI for development purposes."
+            ],
+            correctAnswer: "d",
+        },
     ];
 
     return questions.filter((items) => items.exerciseId === exerciseId);

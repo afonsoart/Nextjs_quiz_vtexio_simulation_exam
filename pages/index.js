@@ -85,6 +85,20 @@ export function getQuestions(exerciseId) {
             ],
             correctAnswer: "a",
         },
+
+        {
+            id: 6,
+            exerciseId: 0,
+            question:
+                "What does the vtex url command do in the context of VTEX IO?",
+            answers: [
+                "Generates a random URL for testing purposes.",
+                "Displays the base URL for the current account only.",
+                "Prints the base URL for the current account, workspace, and environment.",
+                "Sets up a new URL for the VTEX development environment."
+            ],
+            correctAnswer: "c",
+        },
     ];
 
     return questions.filter((items) => items.exerciseId === exerciseId);
